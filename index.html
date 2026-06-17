@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Elara Voss — Independent graphic designer crafting brand identities, packaging, illustration and digital products for ambitious clients." />
+  <meta name="theme-color" content="#14110E" />
+  <title>Elara Voss — Graphic Designer & Brand Identity</title>
+
+  <!-- Social preview -->
+  <meta property="og:title" content="Elara Voss — Graphic Designer" />
+  <meta property="og:description" content="Brand identity, packaging, illustration & digital product design." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='serif'>E</text></svg>" />
+</head>
+<body>
+  <!-- Page load curtain -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__mark">EV</span>
+      <span class="loader__bar"><span class="loader__fill"></span></span>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand" data-cursor="hover">
+      <span class="nav__brand-mark">EV</span>
+      <span class="nav__brand-text">Elara&nbsp;Voss</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work" data-cursor="hover">Work</a>
+      <a href="#about" data-cursor="hover">About</a>
+      <a href="#services" data-cursor="hover">Services</a>
+      <a href="#contact" data-cursor="hover">Contact</a>
+    </nav>
+
+    <a href="#contact" class="nav__cta" data-cursor="hover">
+      Start a project
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <div class="mobile-menu__foot">
+      <a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a>
+      <a href="https://behance.net" target="_blank" rel="noopener">Behance</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+        <span class="grid-lines"></span>
+      </div>
+
+      <div class="hero__inner">
+        <p class="hero__eyebrow reveal">
+          <span class="dot"></span> Independent Designer · Available Q3 2026
+        </p>
+
+        <h1 class="hero__title">
+          <span class="line"><span class="word">Design</span> <span class="word">that</span></span>
+          <span class="line"><span class="word italic">moves</span> <span class="word">brands</span></span>
+          <span class="line"><span class="word">forward.</span></span>
+        </h1>
+
+        <div class="hero__meta">
+          <p class="hero__lede reveal">
+            I’m <strong>Elara Voss</strong> — a multidisciplinary graphic designer building
+            confident brand identities, packaging, illustration and digital products for
+            founders and studios who refuse to blend in.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a href="#work" class="btn btn--solid" data-cursor="hover">
+              View selected work
+            </a>
+            <a href="#contact" class="btn btn--ghost" data-cursor="hover">
+              Let’s talk →
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__stats reveal">
+          <div class="stat"><span class="stat__num" data-count="120">0</span><span class="stat__plus">+</span><span class="stat__label">Projects shipped</span></div>
+          <div class="stat"><span class="stat__num" data-count="9">0</span><span class="stat__label">Years crafting brands</span></div>
+          <div class="stat"><span class="stat__num" data-count="14">0</span><span class="stat__label">Design awards</span></div>
+          <div class="stat"><span class="stat__num" data-count="38">0</span><span class="stat__label">Happy clients worldwide</span></div>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Brand Identity</span><span class="sep">✦</span>
+        <span>Packaging</span><span class="sep">✦</span>
+        <span>Logo Design</span><span class="sep">✦</span>
+        <span>Illustration</span><span class="sep">✦</span>
+        <span>UI / UX</span><span class="sep">✦</span>
+        <span>Art Direction</span><span class="sep">✦</span>
+        <span>Brand Identity</span><span class="sep">✦</span>
+        <span>Packaging</span><span class="sep">✦</span>
+        <span>Logo Design</span><span class="sep">✦</span>
+        <span>Illustration</span><span class="sep">✦</span>
+        <span>UI / UX</span><span class="sep">✦</span>
+        <span>Art Direction</span><span class="sep">✦</span>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about section" id="about">
+      <div class="section__head">
+        <span class="section__index">01</span>
+        <span class="section__kicker">About me</span>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__portrait reveal">
+          <!-- Stylised SVG portrait -->
+          <svg viewBox="0 0 400 480" class="portrait" role="img" aria-label="Stylised portrait of Elara Voss">
+            <defs>
+              <linearGradient id="pBg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#FF5A36"/><stop offset="1" stop-color="#FF8A5B"/>
+              </linearGradient>
+              <linearGradient id="pHair" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#2A211C"/><stop offset="1" stop-color="#14110E"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="480" rx="18" fill="url(#pBg)"/>
+            <circle cx="200" cy="190" r="250" fill="#14110E" opacity="0.06"/>
+            <g>
+              <path d="M120 470 q80 -110 160 0 z" fill="#14110E"/>
+              <path d="M132 300 q68 70 136 0 l4 90 q-72 60 -144 0 z" fill="#F1C9A5"/>
+              <ellipse cx="200" cy="210" rx="78" ry="92" fill="#F6D3AE"/>
+              <path d="M122 200 q-6 -110 78 -120 q84 10 78 120 q-20 -54 -78 -52 q-58 -2 -78 52z" fill="url(#pHair)"/>
+              <path d="M122 196 q4 70 18 96 q-46 -20 -18 -96z" fill="url(#pHair)"/>
+              <path d="M278 196 q-4 70 -18 96 q46 -20 18 -96z" fill="url(#pHair)"/>
+              <circle cx="172" cy="206" r="6" fill="#14110E"/>
+              <circle cx="228" cy="206" r="6" fill="#14110E"/>
+              <path d="M158 188 q14 -10 28 -2" fill="none" stroke="#14110E" stroke-width="3" stroke-linecap="round"/>
+              <path d="M214 186 q14 -8 28 2" fill="none" stroke="#14110E" stroke-width="3" stroke-linecap="round"/>
+              <path d="M192 218 q8 14 16 0" fill="none" stroke="#C98A63" stroke-width="3" stroke-linecap="round"/>
+              <path d="M184 246 q16 14 32 0" fill="none" stroke="#C45B45" stroke-width="4" stroke-linecap="round"/>
+            </g>
+          </svg>
+          <div class="about__badge">
+            <svg viewBox="0 0 120 120" class="spin-badge" aria-hidden="true">
+              <defs><path id="circlePath" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+              <text class="badge-text"><textPath href="#circlePath">· DESIGNER · ART DIRECTOR · ILLUSTRATOR </textPath></text>
+              <circle cx="60" cy="60" r="20" fill="#14110E"/>
+              <path d="M53 60l5 5 9-11" fill="none" stroke="#FF5A36" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="about__body">
+          <h2 class="about__statement reveal-words">
+            I help brands find their voice and wear it with confidence — through
+            systems that are <em>beautiful</em>, considered and built to scale.
+          </h2>
+
+          <p class="about__text reveal">
+            For nearly a decade I’ve partnered with startups, cultural institutions and
+            consumer brands to shape identities that feel inevitable. My practice spans the
+            full arc of a brand — from the first sketch and naming workshop to packaging on
+            the shelf, the campaign in the feed, and the product in your hands.
+          </p>
+          <p class="about__text reveal">
+            I believe great design is equal parts strategy and craft. Every grid, glyph and
+            gradient should earn its place. The result is work that doesn’t just look good in
+            a case study — it performs in the wild.
+          </p>
+
+          <div class="about__cols reveal">
+            <div>
+              <h3>What I do</h3>
+              <ul>
+                <li>Brand identity &amp; strategy</li>
+                <li>Packaging &amp; print</li>
+                <li>Logo &amp; type design</li>
+                <li>Illustration &amp; 2D art</li>
+                <li>UI / UX &amp; web</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Toolkit</h3>
+              <ul>
+                <li>Figma · Illustrator</li>
+                <li>Photoshop · InDesign</li>
+                <li>Blender · After Effects</li>
+                <li>Procreate</li>
+                <li>Webflow · Framer</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about__clients reveal">
+            <span class="about__clients-label">Trusted by</span>
+            <div class="about__logos">
+              <span>NOVA</span><span>Lumen</span><span>Atłas</span><span>Verde</span><span>Halo</span><span>Mýth</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PROJECTS ============ -->
+    <section class="work section" id="work">
+      <div class="section__head">
+        <span class="section__index">02</span>
+        <span class="section__kicker">Featured projects</span>
+        <p class="section__title">Selected case studies, end&#8209;to&#8209;end.</p>
+      </div>
+
+      <div class="work__list">
+
+        <!-- Project 01 -->
+        <article class="case reveal" data-accent="#FF5A36">
+          <a class="case__media" href="#" data-cursor="view" aria-label="Open case study: Solène Skincare">
+            <svg viewBox="0 0 640 440" class="mock" role="img" aria-label="Solène skincare packaging mockup">
+              <rect width="640" height="440" fill="#F3E7DC"/>
+              <circle cx="320" cy="210" r="180" fill="#E9D2C0"/>
+              <!-- bottles -->
+              <g transform="translate(180 120)">
+                <rect x="0" y="40" width="90" height="200" rx="14" fill="#fff"/>
+                <rect x="0" y="40" width="90" height="70" rx="14" fill="#FF5A36"/>
+                <rect x="28" y="10" width="34" height="34" rx="6" fill="#2A211C"/>
+                <text x="45" y="170" text-anchor="middle" font-family="Fraunces, serif" font-size="20" fill="#2A211C">solène</text>
+              </g>
+              <g transform="translate(300 90)">
+                <rect x="0" y="40" width="110" height="250" rx="16" fill="#2A211C"/>
+                <rect x="0" y="180" width="110" height="110" rx="16" fill="#FF7A4D"/>
+                <circle cx="55" cy="30" r="20" fill="#2A211C"/>
+                <text x="55" y="150" text-anchor="middle" font-family="Fraunces, serif" font-size="22" fill="#F3E7DC">solène</text>
+              </g>
+              <g transform="translate(450 150)">
+                <rect x="0" y="40" width="70" height="160" rx="35" fill="#FF5A36"/>
+                <rect x="20" y="14" width="30" height="30" rx="6" fill="#fff"/>
+              </g>
+            </svg>
+            <span class="case__cta">View case</span>
+          </a>
+          <div class="case__info">
+            <div class="case__top">
+              <span class="case__num">01</span>
+              <ul class="case__tags"><li>Branding</li><li>Packaging</li><li>Art Direction</li></ul>
+            </div>
+            <h3 class="case__name">Solène Skincare</h3>
+            <p class="case__desc">
+              A complete identity for a botanical skincare house. We distilled “quiet luxury”
+              into a warm, tactile system — a custom serif wordmark, a sun-warmed palette and
+              recyclable packaging that turns the shelf into a moment of calm. Sales lifted
+              <strong>34%</strong> in the first quarter after relaunch.
+            </p>
+            <span class="case__year">2026 · Identity &amp; Packaging</span>
+          </div>
+        </article>
+
+        <!-- Project 02 -->
+        <article class="case reveal" data-accent="#3B5BDB">
+          <a class="case__media" href="#" data-cursor="view" aria-label="Open case study: Cadence Finance">
+            <svg viewBox="0 0 640 440" class="mock" role="img" aria-label="Cadence finance app screens">
+              <rect width="640" height="440" fill="#EAEEF9"/>
+              <rect x="40" y="60" width="170" height="320" rx="26" fill="#14110E"/>
+              <rect x="52" y="78" width="146" height="284" rx="16" fill="#fff"/>
+              <rect x="68" y="100" width="80" height="14" rx="7" fill="#3B5BDB"/>
+              <rect x="68" y="128" width="114" height="40" rx="10" fill="#EAEEF9"/>
+              <rect x="68" y="182" width="114" height="60" rx="10" fill="#3B5BDB"/>
+              <rect x="68" y="256" width="52" height="52" rx="10" fill="#C6D2F5"/>
+              <rect x="130" y="256" width="52" height="52" rx="10" fill="#C6D2F5"/>
+              <!-- second screen -->
+              <rect x="250" y="40" width="190" height="360" rx="28" fill="#3B5BDB"/>
+              <rect x="264" y="58" width="162" height="324" rx="18" fill="#fff"/>
+              <path d="M280 300 q40 -120 70 -60 t70 -40" fill="none" stroke="#3B5BDB" stroke-width="5" stroke-linecap="round"/>
+              <rect x="280" y="80" width="120" height="16" rx="8" fill="#14110E"/>
+              <rect x="280" y="108" width="80" height="10" rx="5" fill="#9AA8D8"/>
+              <!-- card -->
+              <g transform="rotate(-12 540 200)">
+                <rect x="450" y="120" width="180" height="116" rx="16" fill="#14110E"/>
+                <rect x="466" y="196" width="80" height="12" rx="6" fill="#FFD23F"/>
+                <circle cx="600" cy="150" r="16" fill="#3B5BDB"/>
+              </g>
+            </svg>
+            <span class="case__cta">View case</span>
+          </a>
+          <div class="case__info">
+            <div class="case__top">
+              <span class="case__num">02</span>
+              <ul class="case__tags"><li>UI / UX</li><li>Product</li><li>Design System</li></ul>
+            </div>
+            <h3 class="case__name">Cadence Finance</h3>
+            <p class="case__desc">
+              A calm, confident fintech for everyday investors. I designed the brand and the
+              product in lockstep — a modular design system, an accessible component library
+              and motion that makes money feel manageable. Shipped to <strong>200k+</strong>
+              users across iOS and web.
+            </p>
+            <span class="case__year">2025 · Brand &amp; Product Design</span>
+          </div>
+        </article>
+
+        <!-- Project 03 -->
+        <article class="case reveal" data-accent="#1F8A5B">
+          <a class="case__media" href="#" data-cursor="view" aria-label="Open case study: Wildroot Coffee">
+            <svg viewBox="0 0 640 440" class="mock" role="img" aria-label="Wildroot coffee bags">
+              <rect width="640" height="440" fill="#0E2A20"/>
+              <circle cx="500" cy="80" r="160" fill="#1F8A5B" opacity="0.35"/>
+              <g transform="translate(120 90)">
+                <path d="M0 30 h150 l-14 250 q-61 24 -122 0 z" fill="#F2EDE0"/>
+                <rect x="46" y="0" width="58" height="34" rx="4" fill="#0E2A20"/>
+                <circle cx="75" cy="120" r="44" fill="#1F8A5B"/>
+                <path d="M75 96 q22 24 0 48 q-22 -24 0 -48z" fill="#F2EDE0"/>
+                <text x="75" y="210" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="20" fill="#0E2A20">WILDROOT</text>
+              </g>
+              <g transform="translate(330 130)">
+                <path d="M0 30 h150 l-14 230 q-61 24 -122 0 z" fill="#1F8A5B"/>
+                <rect x="46" y="0" width="58" height="34" rx="4" fill="#0E2A20"/>
+                <circle cx="75" cy="110" r="40" fill="#F2EDE0"/>
+                <path d="M75 88 q20 22 0 44 q-20 -22 0 -44z" fill="#1F8A5B"/>
+                <text x="75" y="190" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="18" fill="#F2EDE0">WILDROOT</text>
+              </g>
+            </svg>
+            <span class="case__cta">View case</span>
+          </a>
+          <div class="case__info">
+            <div class="case__top">
+              <span class="case__num">03</span>
+              <ul class="case__tags"><li>Branding</li><li>Packaging</li><li>Illustration</li></ul>
+            </div>
+            <h3 class="case__name">Wildroot Coffee Roasters</h3>
+            <p class="case__desc">
+              An earthy, expressive identity for a small-batch roaster. Hand-drawn botanical
+              marks, a stamped wordmark and a flexible colour-coded packaging system that lets
+              a tiny team launch new blends in minutes. Now stocked in <strong>60+</strong> cafés.
+            </p>
+            <span class="case__year">2025 · Identity &amp; Packaging</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ BRANDING DESIGNS ============ -->
+    <section class="branding section" id="branding">
+      <div class="section__head">
+        <span class="section__index">03</span>
+        <span class="section__kicker">Branding designs</span>
+        <p class="section__title">Identity systems built to flex.</p>
+      </div>
+
+      <div class="brand-grid">
+        <article class="brand-card brand-card--wide reveal">
+          <div class="brand-card__visual" style="--c:#FF5A36;--c2:#FFB199">
+            <svg viewBox="0 0 600 300" class="mock" aria-hidden="true">
+              <rect width="600" height="300" fill="#14110E"/>
+              <text x="300" y="130" text-anchor="middle" font-family="Fraunces, serif" font-size="74" fill="#FF5A36">Maison</text>
+              <text x="300" y="175" text-anchor="middle" font-family="Inter, sans-serif" letter-spacing="14" font-size="16" fill="#F4F0E9">ATELIER · PARIS</text>
+              <line x1="180" y1="200" x2="420" y2="200" stroke="#FF5A36" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="brand-card__meta">
+            <h3>Maison Atelier</h3>
+            <p>Editorial identity &amp; stationery suite for a Parisian interior studio — serif elegance meets a strict modular grid.</p>
+            <span class="chip">Visual Identity</span>
+          </div>
+        </article>
+
+        <article class="brand-card reveal">
+          <div class="brand-card__visual" style="--c:#3B5BDB;--c2:#9AB0F0">
+            <svg viewBox="0 0 300 300" class="mock" aria-hidden="true">
+              <rect width="300" height="300" fill="#EAEEF9"/>
+              <circle cx="150" cy="130" r="64" fill="none" stroke="#3B5BDB" stroke-width="10"/>
+              <circle cx="150" cy="130" r="24" fill="#3B5BDB"/>
+              <text x="150" y="235" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" letter-spacing="6" font-size="22" fill="#14110E">ORBIT</text>
+            </svg>
+          </div>
+          <div class="brand-card__meta">
+            <h3>Orbit Labs</h3>
+            <p>A precise, scientific mark for a space-tech research lab.</p>
+            <span class="chip">Logo &amp; System</span>
+          </div>
+        </article>
+
+        <article class="brand-card reveal">
+          <div class="brand-card__visual" style="--c:#1F8A5B;--c2:#86E0B4">
+            <svg viewBox="0 0 300 300" class="mock" aria-hidden="true">
+              <rect width="300" height="300" fill="#0E2A20"/>
+              <path d="M150 70 q60 60 0 160 q-60 -100 0 -160z" fill="#1F8A5B"/>
+              <path d="M150 110 q0 40 0 100" stroke="#0E2A20" stroke-width="4" fill="none"/>
+              <text x="150" y="250" text-anchor="middle" font-family="Fraunces, serif" font-size="26" fill="#F2EDE0">Verdant</text>
+            </svg>
+          </div>
+          <div class="brand-card__meta">
+            <h3>Verdant</h3>
+            <p>Organic identity for a regenerative farming co-op.</p>
+            <span class="chip">Brand Identity</span>
+          </div>
+        </article>
+
+        <article class="brand-card brand-card--wide reveal">
+          <div class="brand-card__visual" style="--c:#9B287B;--c2:#E89CCB">
+            <svg viewBox="0 0 600 300" class="mock" aria-hidden="true">
+              <rect width="600" height="300" fill="#1A1020"/>
+              <text x="300" y="160" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="80" fill="#E89CCB">PULSE</text>
+              <rect x="160" y="190" width="280" height="6" rx="3" fill="#9B287B"/>
+              <text x="300" y="225" text-anchor="middle" font-family="Inter, sans-serif" letter-spacing="10" font-size="14" fill="#fff">MUSIC FESTIVAL</text>
+            </svg>
+          </div>
+          <div class="brand-card__meta">
+            <h3>Pulse Festival</h3>
+            <p>A loud, kinetic identity for an electronic music festival — built for motion, posters and the crowd.</p>
+            <span class="chip">Event Branding</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ LOGO COLLECTION ============ -->
+    <section class="logos section" id="logos">
+      <div class="section__head">
+        <span class="section__index">04</span>
+        <span class="section__kicker">Logo collection</span>
+        <p class="section__title">Marks &amp; monograms.</p>
+      </div>
+
+      <div class="logo-grid">
+        <!-- each cell is a distinct logo -->
+        <div class="logo-cell reveal" data-cursor="hover">
+          <svg viewBox="0 0 120 120" aria-label="Apex logo"><polygon points="60,24 96,90 24,90" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/><polygon points="60,52 78,86 42,86" fill="currentColor"/></svg>
+          <span>Apex</span>
+        </div>
+        <div class="logo-cell reveal" data-cursor="hover">
+          <svg viewBox="0 0 120 120" aria-label="Lumen logo"><circle cx="60" cy="60" r="34" fill="none" stroke="currentColor" stroke-width="6"/><path d="M60 26 v68 M26 60 h68" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>
+          <span>Lumen</span>
+        </div>
+        <div class="logo-cell reveal" data-cursor="hover">
+          <svg viewBox="0 0 120 120" aria-label="Fold logo"><path d="M30 90 V42 l30 -18 30 18 v48" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/><path d="M30 64 l30 18 30 -18" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/></svg>
+          <span>Fold</span>
+        </div>
+        <div class="logo-cell reveal" data-cursor="hover">
+          <svg viewBox="0 0 120 120" aria-label="Wave logo"><path d="M20 70 q15 -30 30 0 t30 0 t30 0" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><path d="M20 50 q15 -30 30 0 t30 0 t30 0" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" opacity="0.45"/></svg>
+          <span>Wave</span>
+        </div>
+        <div class="logo-cell reveal" data-cursor="hover">
+          <svg viewBox="0 0 120 120" aria-label="Nova monogram"><text x="60" y="78" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="64" fill="currentColor">N</text><circle cx="92" cy="40" r="8" fill="currentColor"/></svg>
+          <span>Nova</span>
+        </div>
+        <div class="logo-cell reveal" data-cursor="hover">
+          <svg viewBox="0 0 120 120" aria-label="Bloom logo"><g fill="currentColor"><ellipse cx="60" cy="38" rx="12" ry="20"/><ellipse cx="82" cy="60" rx="20" ry="12"/><ellipse cx="60" cy="82" rx="12" ry="20"/><ellipse cx="38" cy="60" rx="20" ry="12"/><circle cx="60" cy="60" r="10" fill="#F4F0E9"/></g></svg>
+          <span>Bloom</span>
+        </div>
+        <div class="logo-cell reveal" data-cursor="hover">
+          <svg viewBox="0 0 120 120" aria-label="Loop monogram"><path d="M44 40 a24 24 0 1 0 0 40 a24 24 0 1 0 32 0" fill="none" stroke="currentColor" stroke-width="6"/></svg>
+          <span>Loop</span>
+        </div>
+        <div class="logo-cell reveal" data-cursor="hover">
+          <svg viewBox="0 0 120 120" aria-label="Strata logo"><g fill="currentColor"><rect x="30" y="42" width="60" height="8" rx="4"/><rect x="30" y="58" width="60" height="8" rx="4" opacity="0.7"/><rect x="30" y="74" width="60" height="8" rx="4" opacity="0.45"/></g></svg>
+          <span>Strata</span>
+        </div>
+        <div class="logo-cell reveal" data-cursor="hover">
+          <svg viewBox="0 0 120 120" aria-label="Ember logo"><path d="M60 28 q26 26 0 52 q-26 -26 0 -52z" fill="currentColor"/><circle cx="60" cy="74" r="14" fill="currentColor" opacity="0.5"/></svg>
+          <span>Ember</span>
+        </div>
+        <div class="logo-cell reveal" data-cursor="hover">
+          <svg viewBox="0 0 120 120" aria-label="Quill monogram"><text x="60" y="80" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="60" fill="currentColor">Q</text></svg>
+          <span>Quill</span>
+        </div>
+        <div class="logo-cell reveal" data-cursor="hover">
+          <svg viewBox="0 0 120 120" aria-label="Prism logo"><polygon points="40,80 60,40 80,80" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/><line x1="60" y1="40" x2="60" y2="80" stroke="currentColor" stroke-width="4"/></svg>
+          <span>Prism</span>
+        </div>
+        <div class="logo-cell reveal" data-cursor="hover">
+          <svg viewBox="0 0 120 120" aria-label="Halo logo"><circle cx="60" cy="60" r="30" fill="none" stroke="currentColor" stroke-width="6"/><ellipse cx="60" cy="60" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="4" opacity="0.55"/></svg>
+          <span>Halo</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GRAPHICS / SOCIAL CAMPAIGNS ============ -->
+    <section class="graphics section" id="graphics">
+      <div class="section__head">
+        <span class="section__index">05</span>
+        <span class="section__kicker">Graphics designs</span>
+        <p class="section__title">Campaigns &amp; social systems.</p>
+      </div>
+
+      <div class="graphics-grid">
+        <figure class="poster reveal" style="--g1:#FF5A36;--g2:#FFC24B">
+          <svg viewBox="0 0 320 400" class="mock" aria-hidden="true">
+            <rect width="320" height="400" fill="#FF5A36"/>
+            <circle cx="160" cy="150" r="90" fill="#FFC24B"/>
+            <text x="160" y="300" text-anchor="middle" font-family="Fraunces, serif" font-size="48" fill="#14110E">Summer</text>
+            <text x="160" y="345" text-anchor="middle" font-family="Inter, sans-serif" letter-spacing="8" font-size="14" fill="#14110E">SALE · UP TO 50%</text>
+          </svg>
+          <figcaption>Seasonal sale campaign</figcaption>
+        </figure>
+
+        <figure class="poster reveal" style="--g1:#3B5BDB;--g2:#101633">
+          <svg viewBox="0 0 320 400" class="mock" aria-hidden="true">
+            <rect width="320" height="400" fill="#101633"/>
+            <path d="M0 280 q80 -60 160 0 t160 0 V400 H0z" fill="#3B5BDB"/>
+            <text x="40" y="100" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="40" fill="#fff">WEBINAR</text>
+            <text x="40" y="140" font-family="Inter, sans-serif" font-size="16" fill="#9AB0F0">Design Systems 101</text>
+            <circle cx="240" cy="90" r="40" fill="#3B5BDB"/>
+          </svg>
+          <figcaption>Event promo series</figcaption>
+        </figure>
+
+        <figure class="poster reveal" style="--g1:#1F8A5B;--g2:#F2EDE0">
+          <svg viewBox="0 0 320 400" class="mock" aria-hidden="true">
+            <rect width="320" height="400" fill="#F2EDE0"/>
+            <rect x="30" y="30" width="260" height="260" rx="12" fill="#1F8A5B"/>
+            <path d="M90 200 q70 -120 140 0" fill="none" stroke="#F2EDE0" stroke-width="10" stroke-linecap="round"/>
+            <text x="160" y="340" text-anchor="middle" font-family="Fraunces, serif" font-size="34" fill="#14110E">Grow with us</text>
+          </svg>
+          <figcaption>Brand launch post</figcaption>
+        </figure>
+
+        <figure class="poster poster--wide reveal" style="--g1:#9B287B;--g2:#1A1020">
+          <svg viewBox="0 0 660 400" class="mock" aria-hidden="true">
+            <rect width="660" height="400" fill="#1A1020"/>
+            <g>
+              <rect x="40" y="60" width="170" height="280" rx="10" fill="#9B287B"/>
+              <rect x="245" y="60" width="170" height="280" rx="10" fill="#E89CCB"/>
+              <rect x="450" y="60" width="170" height="280" rx="10" fill="#9B287B" opacity="0.6"/>
+            </g>
+            <text x="330" y="375" text-anchor="middle" font-family="Inter, sans-serif" letter-spacing="10" font-size="14" fill="#E89CCB">3-PART CAROUSEL · INSTAGRAM</text>
+          </svg>
+          <figcaption>Social carousel system</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ ILLUSTRATION ============ -->
+    <section class="illustration section" id="illustration">
+      <div class="section__head">
+        <span class="section__index">06</span>
+        <span class="section__kicker">Illustration &amp; 2D art</span>
+        <p class="section__title">Worlds drawn by hand.</p>
+      </div>
+
+      <div class="illo-grid">
+        <figure class="illo illo--tall reveal">
+          <svg viewBox="0 0 360 480" class="mock" aria-hidden="true">
+            <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD79A"/><stop offset="1" stop-color="#FF7A4D"/></linearGradient></defs>
+            <rect width="360" height="480" fill="url(#sky)"/>
+            <circle cx="180" cy="170" r="70" fill="#FFF3D6"/>
+            <path d="M0 360 q90 -70 180 0 t180 0 V480 H0z" fill="#C4453A"/>
+            <path d="M0 410 q120 -50 240 10 t120 -10 V480 H0z" fill="#8E2F2C"/>
+            <g stroke="#5A1F1E" stroke-width="6" stroke-linecap="round"><path d="M70 480 V380"/><path d="M70 410 l-24 -18 M70 400 l24 -18"/></g>
+          </svg>
+          <figcaption>“Desert Dusk” — editorial illustration</figcaption>
+        </figure>
+
+        <figure class="illo reveal">
+          <svg viewBox="0 0 360 240" class="mock" aria-hidden="true">
+            <rect width="360" height="240" fill="#0E2A20"/>
+            <g fill="#86E0B4"><circle cx="90" cy="120" r="40"/><circle cx="180" cy="120" r="40"/><circle cx="270" cy="120" r="40"/></g>
+            <g fill="#0E2A20"><circle cx="78" cy="112" r="6"/><circle cx="168" cy="112" r="6"/><circle cx="258" cy="112" r="6"/></g>
+            <path d="M70 140 q20 16 40 0 M160 140 q20 16 40 0 M250 140 q20 16 40 0" stroke="#0E2A20" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </svg>
+          <figcaption>Character set — “The Trio”</figcaption>
+        </figure>
+
+        <figure class="illo reveal">
+          <svg viewBox="0 0 360 240" class="mock" aria-hidden="true">
+            <rect width="360" height="240" fill="#EAE3FF"/>
+            <g fill="none" stroke="#5B3FAE" stroke-width="5" stroke-linecap="round">
+              <circle cx="180" cy="120" r="60"/><path d="M120 120 h120 M180 60 v120"/>
+              <path d="M138 78 l84 84 M222 78 l-84 84"/>
+            </g>
+            <circle cx="180" cy="120" r="14" fill="#5B3FAE"/>
+          </svg>
+          <figcaption>Geometric pattern study</figcaption>
+        </figure>
+
+        <figure class="illo illo--wide reveal">
+          <svg viewBox="0 0 740 240" class="mock" aria-hidden="true">
+            <rect width="740" height="240" fill="#14110E"/>
+            <g>
+              <circle cx="140" cy="120" r="60" fill="#FF5A36"/>
+              <circle cx="300" cy="120" r="60" fill="#FFC24B"/>
+              <circle cx="460" cy="120" r="60" fill="#3B5BDB"/>
+              <circle cx="620" cy="120" r="60" fill="#1F8A5B"/>
+            </g>
+            <path d="M40 120 h660" stroke="#F4F0E9" stroke-width="2" opacity="0.4"/>
+          </svg>
+          <figcaption>“Spectrum” — abstract series</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ UI / UX ============ -->
+    <section class="uiux section" id="uiux">
+      <div class="section__head">
+        <span class="section__index">07</span>
+        <span class="section__kicker">UI / UX designs</span>
+        <p class="section__title">Interfaces with intent.</p>
+      </div>
+
+      <div class="uiux-grid">
+        <article class="screen reveal">
+          <div class="browser">
+            <span class="browser__dots"><i></i><i></i><i></i></span>
+            <svg viewBox="0 0 520 320" class="mock" aria-hidden="true">
+              <rect width="520" height="320" fill="#fff"/>
+              <rect width="520" height="56" fill="#14110E"/>
+              <rect x="24" y="22" width="80" height="12" rx="6" fill="#FF5A36"/>
+              <rect x="360" y="20" width="60" height="16" rx="8" fill="#FF5A36"/>
+              <rect x="430" y="20" width="60" height="16" rx="8" fill="#2A211C"/>
+              <rect x="40" y="96" width="240" height="28" rx="6" fill="#14110E"/>
+              <rect x="40" y="136" width="200" height="14" rx="7" fill="#C9C2B6"/>
+              <rect x="40" y="160" width="170" height="14" rx="7" fill="#C9C2B6"/>
+              <rect x="40" y="200" width="120" height="40" rx="8" fill="#FF5A36"/>
+              <rect x="330" y="96" width="150" height="150" rx="12" fill="#F3E7DC"/>
+              <circle cx="405" cy="155" r="34" fill="#FF5A36"/>
+            </svg>
+          </div>
+          <div class="screen__meta">
+            <h3>Solène — E-commerce</h3>
+            <p>Conversion-focused storefront with a tactile, editorial feel and a frictionless checkout.</p>
+          </div>
+        </article>
+
+        <article class="screen reveal">
+          <div class="browser">
+            <span class="browser__dots"><i></i><i></i><i></i></span>
+            <svg viewBox="0 0 520 320" class="mock" aria-hidden="true">
+              <rect width="520" height="320" fill="#0E1525"/>
+              <rect x="0" y="0" width="120" height="320" fill="#101B33"/>
+              <g fill="#3B5BDB"><rect x="24" y="40" width="72" height="12" rx="6"/></g>
+              <g fill="#22304F"><rect x="24" y="80" width="72" height="10" rx="5"/><rect x="24" y="104" width="72" height="10" rx="5"/><rect x="24" y="128" width="72" height="10" rx="5"/></g>
+              <rect x="150" y="40" width="160" height="100" rx="12" fill="#16223D"/>
+              <rect x="330" y="40" width="160" height="100" rx="12" fill="#16223D"/>
+              <path d="M170 110 q40 -50 70 -20 t70 -30" fill="none" stroke="#3B5BDB" stroke-width="4"/>
+              <rect x="150" y="160" width="340" height="130" rx="12" fill="#16223D"/>
+              <g fill="#3B5BDB"><rect x="170" y="250" width="20" height="24" rx="3"/><rect x="200" y="230" width="20" height="44" rx="3"/><rect x="230" y="210" width="20" height="64" rx="3"/><rect x="260" y="240" width="20" height="34" rx="3"/></g>
+            </svg>
+          </div>
+          <div class="screen__meta">
+            <h3>Cadence — Dashboard</h3>
+            <p>A data-dense analytics dashboard kept calm through hierarchy, spacing and restraint.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="process section" id="services">
+      <div class="section__head">
+        <span class="section__index">08</span>
+        <span class="section__kicker">Services &amp; process</span>
+        <p class="section__title">How we’ll work together.</p>
+      </div>
+      <div class="process__list">
+        <div class="step reveal">
+          <span class="step__num">01</span>
+          <h3>Discover</h3>
+          <p>Workshops, research and audits to understand your market, audience and ambition before a single pixel moves.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step__num">02</span>
+          <h3>Define</h3>
+          <p>Strategy, positioning and creative territory — the north star every design decision is measured against.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step__num">03</span>
+          <h3>Design</h3>
+          <p>Identity, packaging, illustration or product — crafted in tight feedback loops and pressure-tested in context.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step__num">04</span>
+          <h3>Deliver</h3>
+          <p>Polished files, guidelines and hands-on support so your team can run with the system long after launch.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIAL ============ -->
+    <section class="quote section">
+      <blockquote class="reveal">
+        <p>“Elara doesn’t just make things beautiful — she makes them <em>make sense</em>. Our rebrand gave the whole company a confidence we didn’t know we were missing.”</p>
+        <cite>— Maya Reyes, CEO at Cadence</cite>
+      </blockquote>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section" id="contact">
+      <div class="contact__inner">
+        <p class="contact__kicker reveal">09 — Contact</p>
+        <h2 class="contact__title">
+          <span class="line reveal-line">Have a project</span>
+          <span class="line reveal-line">in mind? <em>Let’s build</em></span>
+          <span class="line reveal-line">something iconic.</span>
+        </h2>
+
+        <div class="contact__grid">
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <input type="text" id="name" name="name" required placeholder=" " />
+              <label for="name">Your name</label>
+            </div>
+            <div class="field">
+              <input type="email" id="email" name="email" required placeholder=" " />
+              <label for="email">Email address</label>
+            </div>
+            <div class="field">
+              <input type="text" id="company" name="company" placeholder=" " />
+              <label for="company">Company / studio</label>
+            </div>
+            <div class="field">
+              <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+              <label for="message">Tell me about your project</label>
+            </div>
+            <button type="submit" class="btn btn--solid btn--full" data-cursor="hover">Send enquiry</button>
+            <p class="contact__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact__aside reveal">
+            <div class="contact__block">
+              <span class="contact__label">Email</span>
+              <a href="mailto:studio@elaravoss.design" data-cursor="hover">studio@elaravoss.design</a>
+            </div>
+            <div class="contact__block">
+              <span class="contact__label">Based in</span>
+              <p>Lisbon, Portugal — working worldwide (GMT+0)</p>
+            </div>
+            <div class="contact__block">
+              <span class="contact__label">Elsewhere</span>
+              <div class="contact__socials">
+                <a href="https://dribbble.com" target="_blank" rel="noopener" data-cursor="hover">Dribbble</a>
+                <a href="https://behance.net" target="_blank" rel="noopener" data-cursor="hover">Behance</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" data-cursor="hover">Instagram</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" data-cursor="hover">LinkedIn</a>
+              </div>
+            </div>
+            <div class="contact__block">
+              <span class="contact__label">Availability</span>
+              <p><span class="dot dot--live"></span> Booking projects from Q3 2026</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__big" aria-hidden="true">Let’s talk</div>
+    <div class="footer__row">
+      <span>© 2026 Elara Voss — Graphic Designer</span>
+      <a href="#top" data-cursor="hover">Back to top ↑</a>
+      <span>Designed &amp; built with care</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
