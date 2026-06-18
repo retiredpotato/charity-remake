@@ -272,6 +272,8 @@ ul { list-style: none; }
   transition: transform .6s var(--ease);
 }
 .case__media .mock { width: 100%; height: auto; transition: transform .9s var(--ease); }
+.case__media--twofu { background: #fff; }
+.case__media--twofu img.mock { display: block; }
 .case__media:hover .mock { transform: scale(1.05); }
 .case__cta {
   position: absolute; inset: 0; display: grid; place-items: center;
