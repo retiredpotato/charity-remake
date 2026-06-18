@@ -56,7 +56,8 @@ ul { list-style: none; }
 }
 .loader.is-done { opacity: 0; visibility: hidden; }
 .loader__inner { display: flex; flex-direction: column; align-items: center; gap: 22px; }
-.loader__mark { font-family: var(--serif); font-size: 46px; color: var(--paper); letter-spacing: 2px; }
+.loader__mark { width: 66px; height: 66px; color: var(--paper); }
+.loader__mark svg { width: 100%; height: 100%; }
 .loader__bar { width: 180px; height: 2px; background: rgba(244,240,233,.18); overflow: hidden; }
 .loader__fill { display: block; height: 100%; width: 0; background: var(--accent); animation: load 1.3s var(--ease) forwards; }
 @keyframes load { to { width: 100%; } }
@@ -102,10 +103,10 @@ ul { list-style: none; }
 .nav__brand { display: flex; align-items: center; gap: 10px; font-weight: 600; }
 .nav__brand-mark {
   display: grid; place-items: center;
-  width: 36px; height: 36px; border-radius: 50%;
-  background: var(--ink); color: var(--paper);
-  font-family: var(--serif); font-size: 16px;
+  width: 40px; height: 40px;
+  color: var(--ink);
 }
+.nav__brand-mark svg { width: 100%; height: 100%; }
 .nav__brand-text { font-family: var(--serif); font-size: 19px; }
 .nav__links { display: flex; gap: 34px; }
 .nav__links a { position: relative; font-size: 15px; font-weight: 500; }

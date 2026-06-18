@@ -14,7 +14,6 @@
   var FIELDS = [
     // --- Identity ---
     { key: "brandName",     group: "Identity", label: "Name / wordmark",      type: "text" },
-    { key: "brandInitials", group: "Identity", label: "Logo initials",        type: "text" },
     { key: "navCta",        group: "Identity", label: "Nav button label",     type: "text" },
 
     // --- Hero ---
