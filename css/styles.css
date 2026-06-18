@@ -107,6 +107,8 @@ ul { list-style: none; }
   color: var(--ink);
 }
 .nav__brand-mark svg { width: 100%; height: 100%; }
+.nav__brand-mark img.brand-img,
+.loader__mark img.brand-img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .nav__brand-text { font-family: var(--serif); font-size: 19px; }
 .nav__links { display: flex; gap: 34px; }
 .nav__links a { position: relative; font-size: 15px; font-weight: 500; }
