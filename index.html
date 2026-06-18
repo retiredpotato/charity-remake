@@ -38,8 +38,8 @@
   <!-- ============ NAV ============ -->
   <header class="nav" id="nav">
     <a href="#top" class="nav__brand" data-cursor="hover">
-      <span class="nav__brand-mark">EV</span>
-      <span class="nav__brand-text">Elara&nbsp;Voss</span>
+      <span class="nav__brand-mark" data-edit="brandInitials">EV</span>
+      <span class="nav__brand-text" data-edit="brandName">Elara&nbsp;Voss</span>
     </a>
 
     <nav class="nav__links" aria-label="Primary">
@@ -50,7 +50,7 @@
     </nav>
 
     <a href="#contact" class="nav__cta" data-cursor="hover">
-      Start a project
+      <span data-edit="navCta">Start a project</span>
       <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
 
@@ -84,7 +84,7 @@
 
       <div class="hero__inner">
         <p class="hero__eyebrow reveal">
-          <span class="dot"></span> Independent Designer · Available Q3 2026
+          <span class="dot"></span> <span data-edit="heroEyebrow">Independent Designer · Available Q3 2026</span>
         </p>
 
         <h1 class="hero__title">
@@ -94,7 +94,7 @@
         </h1>
 
         <div class="hero__meta">
-          <p class="hero__lede reveal">
+          <p class="hero__lede reveal" data-edit="heroLede">
             I’m <strong>Elara Voss</strong> — a multidisciplinary graphic designer building
             confident brand identities, packaging, illustration and digital products for
             founders and studios who refuse to blend in.
@@ -189,18 +189,18 @@
         </div>
 
         <div class="about__body">
-          <h2 class="about__statement reveal-words">
+          <h2 class="about__statement reveal-words" data-edit="aboutStatement">
             I help brands find their voice and wear it with confidence — through
             systems that are <em>beautiful</em>, considered and built to scale.
           </h2>
 
-          <p class="about__text reveal">
+          <p class="about__text reveal" data-edit="aboutText1">
             For nearly a decade I’ve partnered with startups, cultural institutions and
             consumer brands to shape identities that feel inevitable. My practice spans the
             full arc of a brand — from the first sketch and naming workshop to packaging on
             the shelf, the campaign in the feed, and the product in your hands.
           </p>
-          <p class="about__text reveal">
+          <p class="about__text reveal" data-edit="aboutText2">
             I believe great design is equal parts strategy and craft. Every grid, glyph and
             gradient should earn its place. The result is work that doesn’t just look good in
             a case study — it performs in the wild.
@@ -278,16 +278,16 @@
           <div class="case__info">
             <div class="case__top">
               <span class="case__num">01</span>
-              <ul class="case__tags"><li>Branding</li><li>Packaging</li><li>Art Direction</li></ul>
+              <ul class="case__tags" data-edit="proj1Tags"><li>Branding</li><li>Packaging</li><li>Art Direction</li></ul>
             </div>
-            <h3 class="case__name">Solène Skincare</h3>
-            <p class="case__desc">
+            <h3 class="case__name" data-edit="proj1Name">Solène Skincare</h3>
+            <p class="case__desc" data-edit="proj1Desc">
               A complete identity for a botanical skincare house. We distilled “quiet luxury”
               into a warm, tactile system — a custom serif wordmark, a sun-warmed palette and
               recyclable packaging that turns the shelf into a moment of calm. Sales lifted
               <strong>34%</strong> in the first quarter after relaunch.
             </p>
-            <span class="case__year">2026 · Identity &amp; Packaging</span>
+            <span class="case__year" data-edit="proj1Year">2026 · Identity &amp; Packaging</span>
           </div>
         </article>
 
@@ -321,16 +321,16 @@
           <div class="case__info">
             <div class="case__top">
               <span class="case__num">02</span>
-              <ul class="case__tags"><li>UI / UX</li><li>Product</li><li>Design System</li></ul>
+              <ul class="case__tags" data-edit="proj2Tags"><li>UI / UX</li><li>Product</li><li>Design System</li></ul>
             </div>
-            <h3 class="case__name">Cadence Finance</h3>
-            <p class="case__desc">
+            <h3 class="case__name" data-edit="proj2Name">Cadence Finance</h3>
+            <p class="case__desc" data-edit="proj2Desc">
               A calm, confident fintech for everyday investors. I designed the brand and the
               product in lockstep — a modular design system, an accessible component library
               and motion that makes money feel manageable. Shipped to <strong>200k+</strong>
               users across iOS and web.
             </p>
-            <span class="case__year">2025 · Brand &amp; Product Design</span>
+            <span class="case__year" data-edit="proj2Year">2025 · Brand &amp; Product Design</span>
           </div>
         </article>
 
@@ -360,15 +360,15 @@
           <div class="case__info">
             <div class="case__top">
               <span class="case__num">03</span>
-              <ul class="case__tags"><li>Branding</li><li>Packaging</li><li>Illustration</li></ul>
+              <ul class="case__tags" data-edit="proj3Tags"><li>Branding</li><li>Packaging</li><li>Illustration</li></ul>
             </div>
-            <h3 class="case__name">Wildroot Coffee Roasters</h3>
-            <p class="case__desc">
+            <h3 class="case__name" data-edit="proj3Name">Wildroot Coffee Roasters</h3>
+            <p class="case__desc" data-edit="proj3Desc">
               An earthy, expressive identity for a small-batch roaster. Hand-drawn botanical
               marks, a stamped wordmark and a flexible colour-coded packaging system that lets
               a tiny team launch new blends in minutes. Now stocked in <strong>60+</strong> cafés.
             </p>
-            <span class="case__year">2025 · Identity &amp; Packaging</span>
+            <span class="case__year" data-edit="proj3Year">2025 · Identity &amp; Packaging</span>
           </div>
         </article>
 
@@ -754,11 +754,11 @@
           <aside class="contact__aside reveal">
             <div class="contact__block">
               <span class="contact__label">Email</span>
-              <a href="mailto:studio@elaravoss.design" data-cursor="hover">studio@elaravoss.design</a>
+              <a href="mailto:studio@elaravoss.design" data-cursor="hover" data-edit="contactEmail">studio@elaravoss.design</a>
             </div>
             <div class="contact__block">
               <span class="contact__label">Based in</span>
-              <p>Lisbon, Portugal — working worldwide (GMT+0)</p>
+              <p data-edit="contactLocation">Lisbon, Portugal — working worldwide (GMT+0)</p>
             </div>
             <div class="contact__block">
               <span class="contact__label">Elsewhere</span>
@@ -771,7 +771,7 @@
             </div>
             <div class="contact__block">
               <span class="contact__label">Availability</span>
-              <p><span class="dot dot--live"></span> Booking projects from Q3 2026</p>
+              <p><span class="dot dot--live"></span> <span data-edit="contactAvail">Booking projects from Q3 2026</span></p>
             </div>
           </aside>
         </div>
@@ -789,6 +789,9 @@
     </div>
   </footer>
 
+  <!-- Content schema + admin-driven hydration (no-ops if nothing saved) -->
+  <script src="js/content-schema.js"></script>
+  <script src="js/hydrate.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
