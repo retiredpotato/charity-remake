@@ -177,8 +177,10 @@
 
       <div class="about__grid">
         <div class="about__portrait reveal">
-          <!-- Stylised SVG portrait -->
-          <svg viewBox="0 0 400 480" class="portrait" role="img" aria-label="Stylised portrait of Elara Voss">
+          <!-- Real photo, with the stylised SVG kept as a fallback until the image is uploaded -->
+          <img src="assets/about.jpg" alt="Portrait photograph" class="portrait portrait--photo"
+               onerror="this.style.display='none';this.nextElementSibling.removeAttribute('hidden')" />
+          <svg viewBox="0 0 400 480" class="portrait" role="img" aria-label="Stylised portrait" hidden>
             <defs>
               <linearGradient id="pBg" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0" stop-color="#FF5A36"/><stop offset="1" stop-color="#FF8A5B"/>

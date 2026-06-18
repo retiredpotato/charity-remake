@@ -245,6 +245,7 @@ ul { list-style: none; }
 .about__grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(40px, 6vw, 90px); align-items: start; }
 .about__portrait { position: relative; position: sticky; top: 110px; }
 .portrait { width: 100%; border-radius: 18px; box-shadow: 0 40px 80px -40px rgba(20,17,14,.5); }
+.portrait--photo { display: block; aspect-ratio: 400 / 480; object-fit: cover; object-position: center top; }
 .about__badge { position: absolute; bottom: -34px; right: -22px; width: 120px; height: 120px; }
 .spin-badge { width: 100%; animation: spin 16s linear infinite; }
 .badge-text { font-family: var(--mono); font-size: 9.5px; letter-spacing: 1px; fill: var(--ink); text-transform: uppercase; }
